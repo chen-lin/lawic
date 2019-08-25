@@ -1,4 +1,4 @@
-Swic is a program for **s**olving large-amplitude water **w**aves **i**nteracting with underlying **c**urrent. 
+Lawic is a program for solving **l**arge-**a**mplitude water **w**aves **i**nteracting with underlying **c**urrent. 
 
 
 ### Authors
