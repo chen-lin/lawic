@@ -1,4 +1,4 @@
-Swic is a program for __s__ olving water __w__ aves __i__ nteracting with underlying __c__ urrent. 
+Swic is a program for **s**olving water **w**aves **i**nteracting with underlying **c**urrent. 
 
 
 ### Authors
