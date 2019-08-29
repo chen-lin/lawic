@@ -2,7 +2,7 @@
 
 Lawic solves large amplitude steady periodic water waves traveling on rotational flow. At present, it is distrbuted as an executable program with input parameters that can be changed. 
 
-### Get started
+### How to use
 
 Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple user or in the folder _lawic-1.0.0-win64/_ for windows user and run _lawic_ along with the input file params.dat. Parameters in the input file are self-explanatory. Note that two types of problems are solved respectively by setting:
 1. negative relative mass flux p0, and 
