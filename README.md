@@ -1,4 +1,4 @@
-## Lawic is solving **l**arge-**a**mplitude water **w**aves **i**nteracting with underlying **c**urrents. 
+## lawic: **l**arge-**a**mplitude water **w**aves **i**nteracting with underlying **c**urrents. 
 
 
 ### Authors
