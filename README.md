@@ -11,8 +11,8 @@ Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple us
 For the first case, nonzero vorticity is valid while for the second case the value of the vorticity will be taken as zero no matter what is provided in the input file. When solving the first type of problems, an output file named "fix_p0.txt" will be generated; when solving the second type of problems, a file named "large_u.txt" will be generated.
 
 The output files can then be loaded and processed using the tools in the folder _postproc/_. There are two files in the folder:
-1. flow.py which is a class file with all the functions for postprocessing.
-2. fix_p0.py which is an example for using flow.py to load the data and use the functions for generating figures.
+1. *flow.py* which is a class file with all the functions for postprocessing.
+2. fix_p0.py which is an example for using *flow.py* to load the data and use the functions for generating figures.
 
 ### Mathematics
 
@@ -25,7 +25,7 @@ Most of the relevant studies focus on the case of _u_<_c_ and hence p0<0, while 
 
 ### Examples
 
-The dataset for Ref. [1] is provided in the folder _examples/largeu/_, and all the Figs. 3-8 can be generated using the script examples/fix_p0_largeu.py. The figures are saved in the _examples/figs_ folder
+The dataset for Ref. [1] is provided in the folder _examples/largeu/_, and all the Figs. 3-8 can be generated using the script *examples/fix_p0_largeu.py*. The figures are saved in the _examples/figs/_ folder
 
 
 ### References
