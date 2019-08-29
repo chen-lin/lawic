@@ -1,4 +1,4 @@
-## lawic: **l**arge-**a**mplitude water **w**aves **i**nteracting with underlying **c**urrents. 
+## lawic: Large Amplitude water Waves Interacting with underlying Currents
 
 
 ### Authors
