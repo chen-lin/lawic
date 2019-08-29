@@ -8,7 +8,7 @@ Under consideration is two-dimensional steady periodic traveling surface waves p
 
 For solving large amplitude waves, the free surface problem is first transformed to a fixed boundary problem by using the Dubreril-Jacotin (DJ)transformation. Secondly, the rectangular domain is discretized and the equation is discretized using the finite difference method. Center difference is used at intermediate grid points and backward/forward finite difference is used at boundary points. The nonlinear algebriac equations are then solved using continuation method from the laminar flow solution to large amplitude waves close to waves with stagnation points. See [2-5] for details of the numerical methods.
 
-Most of the relevant studies focus on the case of ![u<c] and hence 
+Most of the relevant studies focus on the case of $u<c$ and hence 
 
 ### How to use
 
