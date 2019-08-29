@@ -7,6 +7,7 @@ Lawic solves large amplitude steady periodic water waves traveling on rotational
 Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple user or in the folder _lawic-1.0.0-win64/_ for windows user and run _lawic_ along with the input file params.dat. Parameters in the input file are self-explanatory. Note that two types of problems are solved respectively by setting:
 1. negative relative mass flux p0, and 
 2. positive relative mass flux p0. 
+
 For the first case, nonzero vorticity is valid while for the second case the value of the vorticity will be also taken as zero no matter what is provided in the input file. When solving the first type of problem, an output file named "fix_p0.txt" will be generated; when solving the second type of problem, a file named "large_u.txt" will be generated.
 
 The output files can then be loaded and processed using the tools in the folder _postproc/_. There are two files in the folder:
