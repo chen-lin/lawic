@@ -2,6 +2,17 @@
 
 Lawic solves large amplitude steady periodic water waves traveling on rotational flow. At present, it is distrbuted as an executable program with input parameters that can be changed. 
 
+### Get started
+
+Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple user or in the folder _lawic-1.0.0-win64/_ for windows user and run _lawic_ along with the input file params.dat. Parameters in the input file are self-explanatory. Note that two types of problems are solved respectively by setting:
+1. negative relative mass flux p0, and 
+2. positive relative mass flux p0. 
+For the first case, nonzero vorticity is valid while for the second case the value of the vorticity will be also taken as zero no matter what is provided in the input file. When solving the first type of problem, an output file named "fix_p0.txt" will be generated; when solving the second type of problem, a file named "large_u.txt" will be generated.
+
+The output files can then be loaded and processed using the tools in the folder _postproc/_. There are two files in the folder:
+1. flow.py which is a class file with all the functions for postprocessing.
+2. fix_p0.py which is an example for using flow.py to load the data and use the functions for generating figures.
+
 ### Mathematics
 
 Under consideration is two-dimensional steady periodic traveling surface waves propagating over water of a finite depth. Flat bed is assumed. Both irrotational and rotational flows can be considered. In this version, only rotational flow with constant vorticity is solved. The motion of inviscid fluids under gravity is governed by Euler's equation with kinematic surface and dynamic boundary conditions at the surface and the kinematic boundary condition at the bed which is assumed to be impenetrable. For more on the mathematics and the proof of the existence of large amplitude wave solutions to this problem, refer to [5].
@@ -10,11 +21,9 @@ For solving large amplitude waves, the free surface problem is first transformed
 
 Most of the relevant studies focus on the case of _u_<_c_ and hence p0<0, while in [6] it has proved the existence of the water waves with _u_>_c_ (p0>0) for irrotational flow. The latter case is also solved. 
 
-### How to use
 
 ### Examples
-
-
+The 
 
 ### References
 
