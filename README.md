@@ -2,6 +2,10 @@
 
 Lawic solves large amplitude steady periodic water waves traveling on rotational flow. At present, it is distrbuted as an executable program with input parameters that can be changed. 
 
+![](https://github.com/chen-lin/lawic/blob/master/examples/figs/u_less_c.gif?raw=true) | ![](https://github.com/chen-lin/lawic/blob/master/examples/figs/u_larger_c.gif?raw=true)
+:---:|:---:
+u<c | u>c
+
 ### How to use
 
 Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple user or in the folder _lawic-1.0.0-win64/_ for windows user and run _lawic_ along with the input file params.dat. Parameters in the input file are self-explanatory. Note that two types of problems are solved respectively by setting:
@@ -25,7 +29,7 @@ Most of the relevant studies focus on the case of _u_<_c_ and hence p0<0, while 
 
 ### Examples
 
-The dataset for Ref. [1] is provided in the folder _examples/largeu/_, and all the Figs. 3-8 can be generated using the script *examples/fix_p0_largeu.py*. The figures are saved in the _examples/figs/_ folder
+The dataset for Ref. [1] is provided in the folder _examples/largeu/_, and the Figs. 3-8 in the paper can be generated using the script *examples/fix_p0_largeu.py*. The figures are saved in the folder _examples/figs/_.
 
 
 ### References
