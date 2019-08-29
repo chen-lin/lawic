@@ -8,7 +8,7 @@ Simply find the excutable file in the folder _lawic-1.0.0-macos64/_ for Apple us
 1. negative relative mass flux p0, and 
 2. positive relative mass flux p0. 
 
-For the first case, nonzero vorticity is valid while for the second case the value of the vorticity will be also taken as zero no matter what is provided in the input file. When solving the first type of problem, an output file named "fix_p0.txt" will be generated; when solving the second type of problem, a file named "large_u.txt" will be generated.
+For the first case, nonzero vorticity is valid while for the second case the value of the vorticity will be taken as zero no matter what is provided in the input file. When solving the first type of problems, an output file named "fix_p0.txt" will be generated; when solving the second type of problems, a file named "large_u.txt" will be generated.
 
 The output files can then be loaded and processed using the tools in the folder _postproc/_. There are two files in the folder:
 1. flow.py which is a class file with all the functions for postprocessing.
@@ -16,15 +16,17 @@ The output files can then be loaded and processed using the tools in the folder 
 
 ### Mathematics
 
-Under consideration is two-dimensional steady periodic traveling surface waves propagating over water of a finite depth. Flat bed is assumed. Both irrotational and rotational flows can be considered. In this version, only rotational flow with constant vorticity is solved. The motion of inviscid fluids under gravity is governed by Euler's equation with kinematic surface and dynamic boundary conditions at the surface and the kinematic boundary condition at the bed which is assumed to be impenetrable. For more on the mathematics and the proof of the existence of large amplitude wave solutions to this problem, refer to [5].
+Under consideration is two-dimensional steady periodic traveling surface waves propagating over water of a finite depth. Flat bed is assumed. Both irrotational and rotational flows can be considered. In this version, only rotational flow with constant vorticity is solved. The motion of inviscid fluids under gravity is governed by Euler's equation with kinematic surface and dynamic boundary conditions at the surface and the kinematic boundary condition at the bed which is assumed to be impenetrable. For more on the mathematics and the proof of the existence of large amplitude wave solutions to this problem, refer to Ref. [5].
 
-For solving large amplitude waves, the free surface problem is first transformed to a fixed boundary problem by using the Dubreril-Jacotin (DJ)transformation. Secondly, the rectangular domain is discretized and the equation is discretized using the finite difference method. Center difference is used at intermediate grid points and backward/forward finite difference is used at boundary points. The nonlinear algebriac equations are then solved using continuation method from the laminar flow solution to large amplitude waves close to waves with stagnation points. See [2-5] for details of the numerical methods.
+For solving large amplitude waves, the free surface problem is first transformed to a fixed boundary problem by using the Dubreril-Jacotin (DJ)transformation. Secondly, the rectangular domain is discretized and the equation is discretized using the finite difference method. Center difference is used at intermediate grid points and backward/forward finite difference is used at boundary points. The nonlinear algebriac equations are then solved using continuation method from the laminar flow solution to large amplitude waves close to waves with stagnation points. See Refs. [2-5] for details of the numerical methods.
 
-Most of the relevant studies focus on the case of _u_<_c_ and hence p0<0, while in [6] it has proved the existence of the water waves with _u_>_c_ (p0>0) for irrotational flow. The latter case is also solved. 
+Most of the relevant studies focus on the case of _u_<_c_ and hence p0<0, while Ref. [6] has proved the existence of the water waves with _u_>_c_ (p0>0) for irrotational flow. The solution of the latter problem is therefore also included. 
 
 
 ### Examples
-The 
+
+The dataset for Ref. [1] is provided in the folder _examples/largeu/_, and all the Figs. 3-8 can be generated using the script examples/fix_p0_largeu.py. The figures are saved in the _examples/figs_ folder
+
 
 ### References
 
@@ -36,6 +38,8 @@ The
 1. Basu, B. (2018). [On the existence of two-dimensional irrotational water waves over finite depth with uniform current](https://doi.org/10.1080/00036811.2017.1376321). _Applicable Analysis_, 97(14), 2523-2532.
 
 ### License
+
+This software is made public for research use only. It may be modified and redistributed under the terms of the GNU General Public License.
 
 ### Authors
 Dr. [Lin Chen](https://chen-lin.github.io) <br/>
