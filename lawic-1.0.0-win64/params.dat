@@ -1,0 +1,11 @@
+value           variable
+----------------------------------------------------------------
+2              - relative mass flux p0
+9.8            - gravity constant
+0              - vorticity (constant presently)
+400            - number of points in q (horizontal)
+600            - number of grid points in p (vertical)
+0.02           - step for local bifurcation
+0.03           - step for continuation
+22.4           - Q value to start decrease continuation step
+10             - times of reduction of the continuation step 
