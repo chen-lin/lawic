@@ -44,7 +44,7 @@ plt.xlabel('$Q$')
 plt.ylabel('Wave height')
 plt.tight_layout()
 plt.ylim([-0.02,0.62])
-plt.savefig('fig3a-diagram.pdf', format='pdf')
+plt.savefig('figs/fig3a-diagram.pdf', format='pdf')
 
 #%%
 flow.extract(flow.n_h-1)
@@ -63,7 +63,7 @@ plt.xticks([-np.pi,-np.pi/2,0,np.pi/2,np.pi],
            ('$-\pi$', '$-\pi/2$', '0', '$\pi/2$', '$\pi$'))
 plt.ylim([-0.8,0.5])
 plt.tight_layout()
-plt.savefig('fig4a-prof.pdf', format='pdf')
+plt.savefig('figs/fig4a-prof.pdf', format='pdf')
 
 #fig_angle = plt.figure(figsize=(6*1.,3.6*1.))
 #ax = fig_angle.gca()
@@ -80,7 +80,7 @@ plt.ylabel('$c-u$')
 plt.xlabel('$p$')
 ax.grid(linestyle="--")
 plt.tight_layout() 
-plt.savefig('fig5a-c-u.pdf', format='pdf')
+plt.savefig('figs/fig5a-c-u.pdf', format='pdf')
 
 #%%
 fig = plt.figure(figsize=(6*1.,3.6*1.))
@@ -90,7 +90,7 @@ ax.grid(linestyle="--")
 plt.xlabel('$Q$')
 plt.ylabel('$d$')
 plt.tight_layout()
-plt.savefig('fig6a-depth.pdf', format='pdf')
+plt.savefig('figs/fig6a-depth.pdf', format='pdf')
 
 #%% Compute slope versus mu
 k = np.array([0,2,5,10])
@@ -123,7 +123,7 @@ plt.xlim([0.8,9.2])
 plt.xticks(np.arange(1,10,1))
 plt.tight_layout()
 #plt.savefig('fig7a-mu-theta.pdf', format='pdf')
-plt.savefig('fig7a-mu-theta.png', format='png')
+plt.savefig('figs/fig7a-mu-theta.png', format='png')
 #%% Particle path
 flow.compute_velocity(flow.n_h-1)
 k = 10
@@ -178,13 +178,13 @@ plt.xlabel('$X$')
 plt.ylabel('$Y$')
 plt.tight_layout()
 #plt.savefig('fig8a-path.pdf', format='pdf')
-plt.savefig('fig8a-path.png', format='png')
+plt.savefig('figs/fig8a-path.png', format='png')
 
 #%% For the case of u>c
 flow = Flow("largeu/u_larger_c.txt","FixMassFlux")
 flow.load()
 
-#%
+#%%
 #fig_name_ext='gam='+'{:.2f}'.format(flow.gamma)
 fig = plt.figure(figsize=(6,3.6))
 ax = fig.gca()
@@ -194,7 +194,7 @@ plt.xlabel('$Q$')
 plt.ylabel('Wave height')
 plt.tight_layout()
 plt.ylim([-0.02,0.62])
-plt.savefig('fig3b-diagram.pdf', format='pdf')
+plt.savefig('figs/fig3b-diagram.pdf', format='pdf')
 #plt.savefig('fig3b-diagram.png', format='png')
 
 #%%
@@ -213,7 +213,7 @@ plt.xticks([-np.pi,-np.pi/2,0,np.pi/2,np.pi],
            ('$-\pi$', '$-\pi/2$', '0', '$\pi/2$', '$\pi$'))
 plt.ylim([-0.8,0.5])
 plt.tight_layout()
-plt.savefig('fig4b-prof.pdf', format='pdf')
+plt.savefig('figs/fig4b-prof.pdf', format='pdf')
 
 #fig_angle = plt.figure(figsize=(6*1.,3.6*1.))
 #ax = fig_angle.gca()
@@ -230,7 +230,7 @@ plt.ylabel('$c-u$')
 plt.xlabel('$p$')
 ax.grid(linestyle="--")
 plt.tight_layout() 
-plt.savefig('fig5b-c-u.pdf', format='pdf')
+plt.savefig('figs/fig5b-c-u.pdf', format='pdf')
 #%%
 fig = plt.figure(figsize=(6*1.,3.6*1.))
 ax = fig.gca()
@@ -239,7 +239,7 @@ ax.grid(linestyle="--")
 plt.xlabel('$Q$')
 plt.ylabel('$d$')
 plt.tight_layout()
-plt.savefig('fig6b-depth.pdf', format='pdf')
+plt.savefig('figs/fig6b-depth.pdf', format='pdf')
 
 #%% Compute slope versus mu
 k = np.array([3,5,10,20])
@@ -270,7 +270,7 @@ plt.xlabel('$\mu=c^3/q_C^3$')
 plt.ylabel('$\\theta_m~(^\circ)$')    
 plt.xlim([-0.025,1.025])
 plt.tight_layout()
-plt.savefig('fig7b-mu-theta.pdf', format='pdf')
+plt.savefig('figs/fig7b-mu-theta.pdf', format='pdf')
 #plt.savefig('fig7b-mu-theta.png', format='png')
 #%% Particle path
 flow.compute_velocity(flow.n_h-1)
@@ -324,4 +324,4 @@ plt.xlabel('$X$')
 plt.ylabel('$Y$')
 plt.yticks([-0.8,-0.4,0,0.4])
 plt.tight_layout()
-plt.savefig('fig8b-path.pdf', format='pdf')
+plt.savefig('figs/fig8b-path.pdf', format='pdf')
